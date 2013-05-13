@@ -1,0 +1,314 @@
+/* -------------------------
+------- MEDIA QUERYs -------
+------------------------- */
+
+/* MEDIA 800px */
+@media (max-width: 800px)
+
+  footer
+
+    #contact
+      background-size: 800px
+
+      .social
+
+        .email, .email:hover
+          background-size: 120px
+          height: 60px
+          width: 60px
+        .email
+          background-position 0px 0px
+          &:hover
+            background-position -60px 0px
+
+
+        .linkedin, .linkedin:hover
+          background-size: 114px
+          height: 51px
+          width: 51px
+        .linkedin
+          background-position 0px -58px
+          &:hover
+            background-position -51px -58px
+
+        .twitter, .twitter:hover
+          background-size: 114px
+          height: 51px
+          width: 51px
+        .twitter
+          background-position 0px -109px
+          &:hover
+            background-position -51px -109px
+
+  #aboutme
+    .info
+      margin-left 6%
+      width 50%
+      h2
+        font-size 2.8em
+        margin-bottom .3em
+      p
+        font-size 1em
+
+    .photos
+      margin-left 2%
+      width 40%
+
+    .skills
+      display block
+      margin 5% 0 0 1%
+      width 100%
+      h3
+        margin-bottom .7em
+      li
+        display inline-block
+        margin 0 4% 3% 0
+        padding 0
+        width 16%
+        &:nth-child(5n+1)
+          margin-right 0
+
+  #services
+
+    article
+      box-shadow 0 0 .2em .1em rgba(89,96,102, .15)
+      display block
+      margin 0 auto 1.5em
+      overflow hidden
+      width 94%
+      &:nth-child(4)
+        margin-right auto
+      ul
+
+        li
+          display inline-block
+          font-size 1.2em
+          margin-right 5%
+          vertical-align top
+          width 42%
+          &:last-child
+            margin-right 0
+          small
+            display none
+    h2
+      margin 0 0 .2em .4em
+      font-size 2.8em
+
+    #personalized
+      box-shadow 0 0 .2em .1em rgba(89,96,102, .15)
+      margin-top 0
+      width 94%
+      h3, p
+        display block
+        width 100%
+      h2
+        border-bottom 1px solid #D3D4D5
+        margin-bottom .5em
+
+
+
+
+
+/* MEDIA 640px */
+@media (max-width: 640px)
+
+  footer
+    #contact
+      background-size: 700px
+    h2
+      font-size 2.5em
+
+  header
+    h1
+      font-size 3.6em
+    h2
+      font-size 1.5em
+
+
+  #home
+
+    article
+
+      .info
+
+        h2
+          font-size 1.9em
+
+
+
+
+/* MEDIA 480px */
+@media (max-width: 480px)
+
+  footer 
+    margin-bottom 1%
+  
+    #contact
+      padding-bottom 8%
+
+
+  header
+    margin-bottom 6%
+  
+    h1
+      font-size 3.3em
+    h2
+      font-size 1.3em
+
+
+  nav
+
+    ul
+
+      li
+        font-size 1em
+        margin 0 .8em
+        &:first-child, &:last-child
+          display none
+
+
+  #aboutme
+
+    .info, .photos
+      display block
+      width 100%
+
+    .info
+      width 90%
+
+      h2
+        font-size 2.8em
+        margin-bottom .2em
+
+      .textinfo
+        font-size 1.2em
+        p
+          margin-bottom .8em
+
+    .photos
+      margin 9% 0 7%
+      padding 0 7%
+
+      #photo01
+        display none
+      #photo02
+        transform: rotate(0deg)
+
+      .shadow
+        &::before  
+          height 94%
+
+
+    .skills
+      margin 10% 0 0 0
+      padding 0 6%
+      h3
+        font-size 2em
+        margin-bottom .6em
+      li
+        margin-right 5%
+        width 47%
+        &:nth-child(6)
+          margin-right 5% !important
+        &:nth-child(odd)
+          margin-right 0
+
+
+
+  #container
+    margin-top 3.2em
+
+  #home
+    padding 0 2%
+
+    article
+      display block
+      margin 0 0 3% 0
+      width 100%
+
+      .shadow, .info
+        box-sizing border-box
+        display inline-block
+        vertical-align top
+        width 45%
+
+      .info
+        h2
+          font-size 2.8em
+          text-align left
+        p
+          display block
+          margin 0
+          padding-right 2%
+  
+  #services
+    
+    article
+
+      ul
+        li
+          display block
+          margin-right 0
+          width 100%
+          small
+            display inline
+
+
+
+
+/* MEDIA 360px */
+@media (max-width: 360px)
+
+  footer
+
+    #contact
+      h2
+        font-size 2.4em
+        padding 5% 0 1%
+
+      .social
+        a
+          margin-right 5%
+
+
+  header
+
+    h1
+      font-size 3em
+      padding-bottom: .1em
+
+    h2
+      font-size 1.1em
+
+
+  #aboutme
+    margin 12% 0 8%
+
+    .info
+
+      h2
+        margin-bottom .1em
+
+      .textinfo
+        font-size 1.1em
+
+    .photos
+      margin-bottom 8%
+
+    .skills
+      li
+        width 46%
+
+
+  #home
+
+    article
+
+      .info
+        h2
+          margin 10% 0 2% 2%
+          font-size 2.4em
+
+  #services
+    h2
+      margin-bottom .1em

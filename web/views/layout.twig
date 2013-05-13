@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="es">
+
+{% include 'head.twig' %}
+
+
+<body>
+
+<!-- CONTAINERS-BG:INI --> 
+<div id="container_bg_0">
+<div id="container_bg_1">
+<div id="container_bg_2">
+
+    <!-- NAVBAR:INI -->
+	<nav>
+		<ul>
+		{% for ruta, titulo in {
+		    'home'     : 'Portada',
+		    'aboutme'  : 'Sobre mí',
+		    'portfolio': 'Portfolio',
+		    'services' : 'Servicios',
+		    'contact'  : 'Contacto'
+		} %}
+			<li><a href="{{ path(ruta) }}">{{ titulo }}</a></li>
+		{% endfor %}
+
+		</ul>
+	</nav>
+    <!-- NAVBAR:FIN -->
+
+
+    <!-- CONTAINER:INI -->
+    <div id="container">
+
+
+        <!-- HEADER:INI -->
+        <header>
+		    <h1><a href="{{ path('home') }}">Imagin<span class="secondcolor">and</span></a></h1>
+		    <h2 class="subtitle">designs</h2>
+		</header>
+	   	<!-- HEADER:END -->
+
+
+        <!-- HOME:INI -->
+        <section id="{{ section }}">{{ block('content') }}</section>
+        <!-- HOME:END -->
+
+
+        <!-- FOOTER:INI --> 
+        <footer>
+		    <div id="contact">
+				<h2><a href="{{ path('contact') }}">Contacto</a></h2>
+				<div class="social">
+		 			<a href="http://www.linkedin.com/in/andressaanarvaez" target="_blank" class="linkedin"></a>
+		            <a href="mailto:info@imaginand.com" target="_blank" class="email"></a>
+		            <a href="https://twitter.com/whereisanddy" target="_blank" class="twitter"></a>
+		    	</div>
+		    </div>
+
+		    <p>Copyright © {{ "now"|date('Y', timezone="Europe/Madrid") }} Imagin<span class="secondcolor">and</span></p>
+		</footer>
+        <!-- FOOTER:END --> 
+
+
+    </div>
+    <!-- CONTAINER:END -->
+    
+</div>
+</div>
+</div>
+<!-- CONTAINERS-BG:END --> 
+</body>
+
+</html>

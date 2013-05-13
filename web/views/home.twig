@@ -1,0 +1,38 @@
+{% extends layout %}
+
+{% block content %}
+
+    <!-- ABOUTME -->
+    <article>
+        <a href="{{ path('aboutme') }}">
+            <div class="shadow"><img src="{{ app.request.basepath }}/web/img/pic_01.jpg" /></div>
+            <div class="info">
+                <h2>Sobre mí</h2>
+                <p>Conóceme! El mejor servicio a un click.</p>
+            </div>
+        </a>
+    </article>
+
+    <!-- PORTFOLIO -->
+    <article>
+        <a href="{{ path('portfolio') }}">
+            <div class="shadow"><img src="{{ app.request.basepath }}/web/img/pic_02.jpg" /></div>
+            <div class="info">
+                <h2>Portfolio</h2>
+                <p>Échale un vistazo a mi trabajo.</p>
+            </div>
+        </a>
+    </article>
+
+    <!-- SERVICIOS -->
+    <article>
+        <a href="{{ path('services') }}">
+            <div class="shadow"><img src="{{ app.request.basepath }}/web/img/pic_03.jpg" /></div>
+            <div class="info">
+                <h2>Servicios</h2>
+                <p>¿Qué necesitas?<br />¡Puedo ayudarte!</p>
+            </div>
+        </a>
+    </article>
+
+{% endblock %}

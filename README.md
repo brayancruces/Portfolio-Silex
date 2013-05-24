@@ -13,6 +13,7 @@ Open Portfolio using Silex.
 
 ### Silex, sus componentes
 Se han utilizado los siguientes plugins:
+* DoctrineServiceProvider
 * FormServiceProvider
 * HttpCacheServiceProvider
 * MonologServiceProvider
@@ -26,4 +27,4 @@ Se han utilizado los siguientes plugins:
 
 ## Instrucciones de uso
 1. Descarga los componentes de Silex usando el gestor de paquetes composer, mediante el archivo raíz `composer.json`
-2. En caso de utilizar DB, añade el plugin DoctrineServiceProvider en tu archivo `app.php`. Descomenta las líneas correspontientes a `*** DOCTRINE ***` y configura el plugin acorde a los ajustes de tu servidor.
+2. En caso de utilizar DB, configura el plugin acorde a los ajustes de tu servidor.

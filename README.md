@@ -1,9 +1,10 @@
-# Portfolio Silex #
+Portfolio Silex
+===============
 
 Open Portfolio using Silex.
----
+
 Éste es un Portfolio para un Desarrollador Web Freelance o "Freelance WebDeveloper".
----
+
 
 ### Tecnologías
 * Silex cómo framework PHP siguiendo la organización de archivos recomendada para todo proyecto Silex.

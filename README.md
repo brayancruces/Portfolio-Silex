@@ -6,6 +6,10 @@ Open Portfolio using Silex.
 Éste es un Portfolio para un Desarrollador Web Freelance o "Freelance WebDeveloper".
 
 
+## Instrucciones de uso
+1. Descarga los componentes de Silex usando el gestor de paquetes composer, mediante el archivo raíz `composer.json`
+2. En caso de utilizar DB, configura el plugin acorde a los ajustes de tu servidor.
+
 ### Tecnologías
 * Silex cómo framework PHP siguiendo la organización de archivos recomendada para todo proyecto Silex.
 * Stylus como pre-procesador CSS3.
@@ -25,6 +29,3 @@ Se han utilizado los siguientes plugins:
 * ValidatorServiceProvider
 * MessageDigestPasswordEncoder (Symfony)
 
-## Instrucciones de uso
-1. Descarga los componentes de Silex usando el gestor de paquetes composer, mediante el archivo raíz `composer.json`
-2. En caso de utilizar DB, configura el plugin acorde a los ajustes de tu servidor.

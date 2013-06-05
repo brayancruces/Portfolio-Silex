@@ -2,4 +2,36 @@
 
 {% block content %}
 
+
+	<h2>Contacto</h2>
+
+    <!-- FORMULARY -->
+	<form action="{{ path('contact') }}" method="post" {{ form_enctype(form) }}>
+		<div id="name">{{ form_row(form.name) }}</div>
+		<div id="phone">{{ form_row(form.phone) }}</div>
+		<div id="email">{{ form_row(form.email) }}</div>
+		<div id="subject">{{ form_row(form.subject) }}</div>
+		<div id="message">{{ form_row(form.message) }}</div>
+		{{ form_rest(form) }}
+		<div id="send">
+			<input type="submit" name="submit" value="Enviar" />
+		</div>
+	</form>
+
+
+	<!-- INFORMATION -->
+	<div id="info">
+		<h3>Datos de Contacto</h3>
+		<dl>
+			<dt>email</dt>
+			<dd>info@imaginand.com</dd>
+			<dt>twitter</dt>
+			<dd>@whereisanddy</dd>
+			<dt>skype</dt>
+			<dd>andres.saa.narvaez</dd>
+			<dt>teléfono</dt>
+			<dd>(+34) 675357974</dd>
+		</dl>
+	</div>
+
 {% endblock %}

@@ -53,6 +53,7 @@ $app->match('/contacto', function (Request $request) use ($app) {
               array('label'       => 'Teléfono',
                     'required'    => false,
                     'constraints' => array(new Assert\Regex(array(
+                                                            'message' => 'El número no es válido'
                                                             'pattern' => '/\d{9}/',
         )))))
         ->add('message', 'textarea',
@@ -87,7 +88,9 @@ $app->match('/contacto', function (Request $request) use ($app) {
         }
     }
 
-    return $app['twig']->render('contact.twig', array('section' => 'contact'));
+    return $app['twig']->render('contact.twig', array('section' => 'contact',
+                                                      'form'    => $form->createView()
+                                                ));
 })->bind('contact');
 
 

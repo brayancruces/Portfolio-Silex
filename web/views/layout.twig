@@ -3,7 +3,6 @@
 
 {% include 'head.twig' %}
 
-
 <body>
 
 <!-- CONTAINERS-BG:INI --> 
@@ -36,7 +35,7 @@
         <!-- HEADER:INI -->
         <header>
 		    <h1><a href="{{ path('home') }}">Imagin<span class="secondcolor">and</span></a></h1>
-		    <h2 class="subtitle">designs</h2>
+		    <div id="designs" class="subtitle">designs</h2>
 		</header>
 	   	<!-- HEADER:END -->
 
@@ -48,7 +47,7 @@
 
         <!-- FOOTER:INI --> 
         <footer>
-		    <div id="contact">
+		    <div id="shareme">
 				<h2><a href="{{ path('contact') }}">Contacto</a></h2>
 				<div class="social">
 		 			<a href="http://www.linkedin.com/in/andressaanarvaez" target="_blank" class="linkedin"></a>
@@ -69,6 +68,9 @@
 </div>
 </div>
 <!-- CONTAINERS-BG:END --> 
+
+{% include 'js.twig' %}
+
 </body>
 
 </html>

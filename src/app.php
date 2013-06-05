@@ -23,7 +23,6 @@ $app->register(new DoctrineServiceProvider(), array(
         'host'      => 'localhost',
         'dbname'    => 'madridintimo',
         'user'      => 'root',
-        // Server 993470
         'password'  => null,
         'charset'   => 'utf8',
     ),
